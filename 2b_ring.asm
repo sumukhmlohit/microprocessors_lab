@@ -21,9 +21,9 @@ start:
         push ax
         mov ah,06h
         mov dl,0ffh
-        int 21h
+        int 21h		;key sensing
         popax
-        j2 rpt
+        jz rpt
         mov ah,4ch
         int 21h
 delay proc:

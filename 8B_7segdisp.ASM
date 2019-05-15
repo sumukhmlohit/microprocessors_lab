@@ -59,7 +59,7 @@ next_bit:
         mov dx,pc
         out dx,al
         mov al,00h
-        out dx,al
+        out dx,al       ;negative edge triggered-so first send 1& then 0 to pc(clock)
         pop ax
         ror al,1
         loop next_bit

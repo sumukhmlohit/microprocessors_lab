@@ -14,7 +14,7 @@ mov dx,cr
 mov al,80h
 out dx,al
 mov cx,64h
-mov al,77h
+mov al,88h
 mov dx,pa
 rotclk:
 out dx,al

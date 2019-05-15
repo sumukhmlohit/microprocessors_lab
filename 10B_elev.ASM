@@ -62,7 +62,7 @@ come_down:
 	call delay
 	dec al
 	cmp al,00h	  	; reached ground floor?
-	jge come_down 	; no, then come down still
+	jge come_down 	        ; no, then come down still
 	
 	mov ah,4ch 
 	int 21h
